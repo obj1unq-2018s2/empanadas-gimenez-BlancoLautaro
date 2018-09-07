@@ -22,6 +22,8 @@ object baigorria {
 	}
  	
 	method sueldo(){ return (cantidadEmpanadasVendidas * montoPorEmpanada) }
+	// TODO Hay algo de lógica repetida entre este método y gastar
+	// ¿Se te ocurre cómo evitarlo?
 	method cobrarSueldo(){ 
 		if (deuda==0){
 			dinero = dinero + self.sueldo()
